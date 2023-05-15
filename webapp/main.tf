@@ -14,7 +14,7 @@ resource "azurerm_linux_web_app" "webapp" {
   location            = var.location
   service_plan_id     = azurerm_service_plan.appserviceplan.id
   https_only          = var.https_only
-  tags                = var.tags
+  #tags                = var.tags
 
   site_config {
     ftps_state = var.ftps_state
